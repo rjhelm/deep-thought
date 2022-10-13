@@ -28,6 +28,12 @@ class AuthService {
         }
     }
 
+    // retrieve token from local storage 
+    getToken() {
+        // the user token retrieved from localStorage
+        return localStorage.getItem('id_token');
+    }
+
     // retrieve token from localStorage
     login(idToken) {
         // saves user token to localStorage

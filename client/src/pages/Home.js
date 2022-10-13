@@ -3,6 +3,7 @@ import { useQuery } from '@apollo/client'
 import { QUERY_THOUGHTS } from '../utils/queries';
 import ThoughtList from '../components/ThoughtList';
 
+
 const Home = () => {
   // use useQuery hook to make a request
   const { loading, data } = useQuery(QUERY_THOUGHTS);
